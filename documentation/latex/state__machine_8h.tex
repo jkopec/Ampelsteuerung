@@ -1,0 +1,97 @@
+\hypertarget{state__machine_8h}{}\section{src/state\+\_\+machine.h File Reference}
+\label{state__machine_8h}\index{src/state\+\_\+machine.\+h@{src/state\+\_\+machine.\+h}}
+
+
+Definiert benötigte Structs, Enums und Functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}led\+\_\+funktionen.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structampelsteuerung__zustand}{ampelsteuerung\+\_\+zustand}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6d}{ampel\+\_\+status} \{ \\*
+\hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da59b0dd0d260e722b287c37c6099128b8}{R\+O\+T}, 
+\hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da72b89ac084d8a50e8ad6661d2ade7c29}{R\+O\+T\+\_\+\+G\+E\+L\+B}, 
+\hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da27afd8640ceaa64a79970c6f81af6bc2}{G\+R\+U\+E\+N}, 
+\hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da9ea051663044d9e8ab74c70511df8eef}{G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D}, 
+\\*
+\hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da954d5ef677a329a041026b662c035456}{G\+E\+L\+B}, 
+\hyperlink{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da01e00cc6413f73a3daf3d20c4fb798e8}{G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{state__machine_8h_abdc02834c2d7d49a2f632644e9e21d81}{ampelsteuerung} (\hyperlink{structampelsteuerung__zustand}{ampelsteuerung\+\_\+zustand} $\ast$\hyperlink{main_8c_a02ef75d7f1eb8dff0be409e37d28e59d}{ampel})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definiert benötigte Structs, Enums und Functions. 
+
+\begin{DoxyAuthor}{Author}
+Jakub\+Kopec 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2015-\/11-\/26 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000005}{Bug}]Bislang keine Fehler bekannt.\end{DoxyRefDesc}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6d}{}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!ampel\+\_\+status@{ampel\+\_\+status}}
+\index{ampel\+\_\+status@{ampel\+\_\+status}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}
+\subsubsection[{ampel\+\_\+status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ampel\+\_\+status}}\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6d}
+Ein Enum in welchem jeder mögliche Status der Ampel abgespeichert wird. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+O\+T@{R\+O\+T}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!R\+O\+T@{R\+O\+T}}\item[{\em 
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da59b0dd0d260e722b287c37c6099128b8}{}R\+O\+T\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da59b0dd0d260e722b287c37c6099128b8}
+}]Wenn die Ampel gerade rot leuchtet. \index{R\+O\+T\+\_\+\+G\+E\+L\+B@{R\+O\+T\+\_\+\+G\+E\+L\+B}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!R\+O\+T\+\_\+\+G\+E\+L\+B@{R\+O\+T\+\_\+\+G\+E\+L\+B}}\item[{\em 
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da72b89ac084d8a50e8ad6661d2ade7c29}{}R\+O\+T\+\_\+\+G\+E\+L\+B\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da72b89ac084d8a50e8ad6661d2ade7c29}
+}]Wenn die Ampel gerade rot und gelb leuchtet. \index{G\+R\+U\+E\+N@{G\+R\+U\+E\+N}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!G\+R\+U\+E\+N@{G\+R\+U\+E\+N}}\item[{\em 
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da27afd8640ceaa64a79970c6f81af6bc2}{}G\+R\+U\+E\+N\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da27afd8640ceaa64a79970c6f81af6bc2}
+}]Wenn die Ampel gerade gruen leuchtet. \index{G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D@{G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D@{G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D}}\item[{\em 
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da9ea051663044d9e8ab74c70511df8eef}{}G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da9ea051663044d9e8ab74c70511df8eef}
+}]Wenn die Ampel gerade gruen blinkt. \index{G\+E\+L\+B@{G\+E\+L\+B}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!G\+E\+L\+B@{G\+E\+L\+B}}\item[{\em 
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da954d5ef677a329a041026b662c035456}{}G\+E\+L\+B\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da954d5ef677a329a041026b662c035456}
+}]Wenn die Ampel gerade gelb leuchtet. \index{G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D@{G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D@{G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D}}\item[{\em 
+\hypertarget{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da01e00cc6413f73a3daf3d20c4fb798e8}{}G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N\+D\label{state__machine_8h_a89d088d3adc3c394733a383c6ac53a6da01e00cc6413f73a3daf3d20c4fb798e8}
+}]Wenn die Ampel gerade gelb blinkt. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{state__machine_8h_abdc02834c2d7d49a2f632644e9e21d81}{}\index{state\+\_\+machine.\+h@{state\+\_\+machine.\+h}!ampelsteuerung@{ampelsteuerung}}
+\index{ampelsteuerung@{ampelsteuerung}!state\+\_\+machine.\+h@{state\+\_\+machine.\+h}}
+\subsubsection[{ampelsteuerung(ampelsteuerung\+\_\+zustand $\ast$ampel)}]{\setlength{\rightskip}{0pt plus 5cm}void ampelsteuerung (
+\begin{DoxyParamCaption}
+\item[{{\bf ampelsteuerung\+\_\+zustand} $\ast$}]{ampel}
+\end{DoxyParamCaption}
+)}\label{state__machine_8h_abdc02834c2d7d49a2f632644e9e21d81}
+Diese Function repräsentiert die State Centric State Machine with Hidden Transitions
+
+Hier wird der genaue Ablauf definiert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ampel} & Der Zustand der Ampel. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & None \\
+\hline
+\end{DoxyRetVals}
